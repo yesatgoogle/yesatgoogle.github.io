@@ -105,11 +105,17 @@ p, ul {
 	right: 0;
 }
 
-.summary {
-	position: relative;
+.iulia img {
+	border-radius: 9999px;
+	object-fit: scale-down;
+	margin-right: 2rem;
 }
 
-.summary::after {
+section:nth-of-type(3) {
+	position: relative; /* Required for colored border. */
+}
+
+section:nth-of-type(3)::after {
     background: linear-gradient(to right, rgb(234, 67, 53) 30%, rgb(66, 133, 244) 30% 70%, rgb(52, 168, 83) 70% 80%, rgb(251, 188, 4) 80%);
     bottom: 0;
     content: "";
