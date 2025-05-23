@@ -1,0 +1,105 @@
+section:nth-of-type(even) {
+	background-color: rgb(248, 249, 250);
+}
+
+section > div {
+	max-width: 1200px;	
+}
+
+h2 {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+p, ul {
+	color: rgb(95, 99, 104);
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+}
+
+.header > div {
+	display: flex;
+}
+
+.header .text {
+	margin-right: 2rem;
+}
+
+.header p {
+	margin: 3.25rem 0;
+}
+
+.header .buttons {
+	display: flex;
+}
+
+.header a {
+	background-color: rgb(11, 87, 208);
+	border-radius: 9999px;
+	color: white;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-right: 1rem;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+}
+
+.header a:hover {
+	background-color: rgb(31, 100, 212);
+	box-shadow: 0 1px 2px rgb(95, 99, 104);
+}
+
+.header a:last-of-type {
+	background-color: white;
+	color: rgb(26, 115, 232);
+	border: 1px solid rgb(218, 220, 224);
+}
+
+.header .photos {
+  display: flex;
+  position: relative;
+	width: 40%;
+}
+
+.header .photos img {
+	border-radius: 9999px;
+  bottom: 0;
+	object-fit: scale-down;
+  position: absolute;
+	width: calc(50% - 0.5rem);
+}
+
+.header .photos img:last-of-type {
+	right: 0;
+}
+
+.iulia img {
+	border-radius: 9999px;
+	object-fit: scale-down;
+	margin-right: 2rem;
+}
+
+section:nth-of-type(2) {
+	position: relative; /* Required for colored border. */
+}
+
+section:nth-of-type(2)::after {
+    background: linear-gradient(to right, rgb(234, 67, 53) 30%, rgb(66, 133, 244) 30% 70%, rgb(52, 168, 83) 70% 80%, rgb(251, 188, 4) 80%);
+    bottom: 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.redacted {
+	background-color: rgb(95, 99, 104);
+}
+
+iframe {
+	border: 0;
+	height: 1100px;
+	width: 100%;
+}

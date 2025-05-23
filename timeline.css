@@ -1,0 +1,187 @@
+#modal.hidden{
+  display: none;
+}
+
+#timeline.disabled {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+}
+
+#timeline {
+  display: flex;
+}
+
+#timeline menu {
+  margin-top: 4.5rem;
+  padding: 0;
+}
+
+#timeline menu li {
+  border-radius: 0 1.5rem 1.5rem 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+#timeline menu a {
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: rgb(32, 33, 36);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  width: 200px;
+  text-decoration: none;
+}
+
+#timeline menu li:hover {
+  background-color: rgb(254, 239, 195);
+}
+
+#events {
+  margin: 0 auto;
+}
+
+section {
+	padding-bottom: 0;
+}
+
+section > div {
+	max-width: 600px;
+}
+
+section h2 {
+  color: rgb(95, 99, 104);
+  font-size: .6875rem;
+  font-weight: 500;
+  margin: .625rem 1rem;
+  text-transform: uppercase;
+}
+
+.card {
+	background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  line-height: 1.5rem;
+  max-width: 600px;
+	transition: box-shadow .218s ease-in-out;
+}
+
+section .card {
+  cursor: default;
+  margin-bottom: 1rem;
+}
+
+.card__content  {
+  padding: 1rem;
+}
+
+.card:hover, .modal .card {
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.card h3 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-bottom: 0.75rem;
+	margin-top: 0;
+}
+
+.card p {
+  font-size: .875rem;
+  margin: 0;
+}
+
+section .card p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.card .buttons {
+	display: flex;
+	justify-content: space-between;
+  padding: 0 0.25rem 0.25rem;
+}
+
+section .card .buttons {
+  opacity: 0;
+  transition: opacity .218s ease-in-out;
+}
+
+section .card:hover .buttons {
+	opacity: 1;
+}
+
+section .card button {
+  display: none;
+}
+
+.card .socials a {
+  border-radius: 100%;
+  display: inline-block;
+  line-height: calc(0.75rem - 1px);
+  padding: 0.625rem;
+}
+
+.card .socials a:hover {
+  background-color: rgba(95,99,104,0.157);
+}
+
+.card .socials img {
+  height: 0.75rem;
+}
+
+#modal {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 3rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.modal__background {
+  background-color: rgb(32, 33, 36);
+  height: 100%;
+	opacity: 0.6;
+	position: fixed;
+	width: 100%;
+}
+
+#modal .card {
+	box-sizing: border-box;
+	max-height: 100%;
+	z-index: 4;
+}
+
+#modal .card__content {
+  box-sizing: border-box;
+  max-height: calc(100% - 2.25rem);
+  overflow: scroll;
+}
+
+#modal .card button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem 1.5rem;
+}
+
+#modal .card button:hover {
+  background-color: rgba(95,99,104,0.039);
+}
+
+#modal .card .socials a {
+  padding: 0.75rem;
+}
