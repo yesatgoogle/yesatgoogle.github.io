@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=menu" />
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="timeline.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -53,11 +54,16 @@
 		<div class="modal__background" onclick="closeModal()"></div>
 	</div>
 	<nav>
-		<a href="index.html">
-			<span class="title">Yes! at 
-				<span class="gBlue">G</span><span class="gRed">o</span><span class="gYellow">o</span><span class="gBlue">g</span><span class="gGreen">l</span><span class="gRed">e</span>
-			</span>
-		</a>
+		<div>
+			<button class="material-symbols-outlined" onclick="toggleMenu()">
+				menu
+			</button>
+			<a href="index.html">
+				<span class="title">Yes! at 
+					<span class="gBlue">G</span><span class="gRed">o</span><span class="gYellow">o</span><span class="gBlue">g</span><span class="gGreen">l</span><span class="gRed">e</span>
+				</span>
+			</a>
+		</div>
 		<div class="links">
 			<a href="index.html">Overview</a>
 			<a href="timeline.html">Timeline</a>

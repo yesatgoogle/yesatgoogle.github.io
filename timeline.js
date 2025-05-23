@@ -34,3 +34,7 @@ function closeModal() {
 	modal.removeChild(modal.lastElementChild);
 	document.getElementById('timeline').removeAttribute('class');
 }
+
+function toggleMenu() {
+	document.querySelector('menu').classList.toggle('hidden');
+}
