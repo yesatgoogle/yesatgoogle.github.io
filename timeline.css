@@ -163,7 +163,7 @@ section .card button {
 
 #modal .card__content {
   box-sizing: border-box;
-  max-height: calc(100% - 2.25rem);
+  max-height: calc(100% - 2.5rem);
   overflow: scroll;
 }
 
