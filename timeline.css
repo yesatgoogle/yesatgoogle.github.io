@@ -156,14 +156,15 @@ section .card button {
 
 #modal .card {
 	box-sizing: border-box;
-  height: 100vh; /* Needed for card__content scroll */
+  display: flex;
+  flex-flow: column;
 	max-height: 100%;
 	z-index: 4;
 }
 
 #modal .card__content {
   box-sizing: border-box;
-  max-height: calc(100% - 2.5rem);
+  flex-grow: 1;
   overflow: scroll;
 }
 
