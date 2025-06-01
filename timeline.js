@@ -3,8 +3,12 @@ function getTemplate(templatePrefix) {
 }
 
 window.onload = function() {
-	const body = document.getElementById('events');
 	const menu = document.querySelector('#timeline menu');
+	if (window.innerWidth <= 768) {
+		menu.classList.add('hidden');
+	}
+
+	const body = document.getElementById('events');
 	const sectionTemplate = Handlebars.compile(getTemplate('section'));
 	const menuItemTemplate = Handlebars.compile(getTemplate('menu-item'));
 	Handlebars.registerPartial('card', getTemplate('card'));
