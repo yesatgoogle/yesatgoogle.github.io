@@ -57,21 +57,41 @@ p, ul {
 }
 
 .header .photos {
-  display: flex;
   position: relative;
-	width: 40%;
+	width: 40rem;
+}
+
+@media only screen and (max-width: 768px) {
+.header .photos {
+	display: none;
+}
+}
+
+.photos img {
+	border-radius: 100%;
+	object-fit: scale-down;
+	width: calc(50% - 0.75rem);
 }
 
 .header .photos img {
-	border-radius: 9999px;
   bottom: 0;
-	object-fit: scale-down;
   position: absolute;
-	width: calc(50% - 0.5rem);
 }
 
 .header .photos img:last-of-type {
 	right: 0;
+}
+
+.summary .photos {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+.summary .photos {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
 }
 
 section:nth-of-type(2) {
