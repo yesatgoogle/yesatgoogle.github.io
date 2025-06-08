@@ -2,7 +2,7 @@ function getTemplate(templatePrefix) {
 	return document.getElementById(templatePrefix + '-template').innerHTML
 }
 
-window.onload = function() {
+function loadEntries() {
 	const menu = document.querySelector('#timeline menu');
 	if (window.innerWidth <= 768) {
 		menu.classList.add('hidden');
@@ -23,6 +23,8 @@ window.onload = function() {
 		});
 	})
 }
+
+document.getElementById('events') ? loadEntries() : window.addEventListener("load", loadEntries);
 
 function openModal(cardContent) {
 	document.getElementById('timeline').setAttribute('class', 'disabled');
