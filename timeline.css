@@ -113,6 +113,7 @@ section .card__content {
 .card p {
   font-size: .875rem;
   margin: 0;
+  white-space: pre-line;
 }
 
 section .card p {
